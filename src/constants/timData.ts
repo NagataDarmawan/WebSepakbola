@@ -17,10 +17,10 @@ export interface OfficialItem {
 export const TIM_DATA: PemainItem[] = [
   {
     id: 'p1',
-    nama: 'ALDI CLAUDIO',
-    posisi: 'PENJAGA GAWANG',
-    nomorPunggung: 1,
-    fotoUrl: '',
+    nama: 'NAGATA DARMAWAN',
+    posisi: 'PENYERANG TENGAH',
+    nomorPunggung: 9,
+    fotoUrl: 'https://nagatadarmawan.vercel.app/nagataSelf.jpg',
   },
   {
     id: 'p2',
