@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 
 export default function DisclaimerModal() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [countdown, setCountdown] = useState<number>(15);
+  const [countdown, setCountdown] = useState<number>(10);
 
   useEffect(() => {
     try {
