@@ -6,6 +6,7 @@ export interface Berita {
   tanggal: string;
   gambarUrl: string;
   headline?: boolean;
+  konten: string[]; // Paragraf isi berita lengkap
 }
 
 export const BERITA_KLUB: Berita[] = [
@@ -17,6 +18,11 @@ export const BERITA_KLUB: Berita[] = [
     tanggal: '18 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=600&auto=format&fit=crop',
     headline: true,
+    konten: [
+      'Slawi — Pertandingan sengit pada pekan ke-12 yang berlangsung di Stadion Tri Sanja berakhir dengan euforia luar biasa bagi kubu tuan rumah. Persekat Tegal berhasil mengamankan tiga poin krusial setelah menumbangkan rival sengitnya lewat gol penentu di detik-detik akhir laga.',
+      'Jalannya pertandingan berlangsung sengit sejak peluit awal dibunyikan. Kedua tim saling berbalas serangan dengan intesitas tinggi, membuat lini pertahanan masing-masing harus bekerja ekstra keras sepanjang 90 menit permainan.',
+      'Kebuntuan akhirnya terpecahkan pada masa injury time babak kedua, tepatnya di menit ke-93. Berawal dari eksekusi sepak pojok terukur, sundulan terarah dari pemain pengganti meluncur deras menembus gawang lawan dan memastikan kemenangan dramatis 2-1 bagi Laskar Ki Gede Sebayu.',
+    ],
   },
   {
     id: '2',
@@ -25,6 +31,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Penyerang tajam tersebut telah menyelesaikan tes medis dan siap menjalani debutnya di laga kandang mendatang.',
     tanggal: '17 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Manajemen Persekat Tegal resmi mengumumkan penandatanganan penyerang baru asal Argentina untuk memperkuat daya gedor tim mengarungi sisa musim kompetisi. Pemain yang berposisi sebagai striker murni ini diikat dengan durasi kontrak selama dua tahun.',
+      'Sebelum resmi diperkenalkan kepada publik, sang pemain telah menjalani serangkaian tes medis ketat dan dinyatakan dalam kondisi kebugaran yang sangat prima. Kehadirannya diharapkan menjadi solusi atas efektivitas penyelesaian akhir tim.',
+      'Dalam sesi konferensi pers perdananya, sang striker mengaku sangat antusias bergabung dengan klub dan berjanji akan memberikan performa maksimal untuk membawa Laskar Ki Gede Sebayu bersaing di papan atas klasemen.',
+    ],
   },
   {
     id: '3',
@@ -33,6 +44,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Sesi latihan tertutup difokuskan pada transisi cepat dari bertahan ke menyerang demi mencuri poin penuh.',
     tanggal: '16 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Menjelang laga derbi sarat gengsi akhir pekan ini, tim pelatih Persekat Tegal menggelar sesi latihan tertutup guna memantapkan skema taktik khusus. Latihan difokuskan pada pengasahan transisi cepat dari pola bertahan ke serangan balik kilat.',
+      'Pelatih kepala menekankan pentingnya kedisiplinan posisi lini belakang serta ketepatan umpan terobosan saat memanfaatkan momentum kelengahan lawan. Skema skrimis antar skuad diperketat untuk menguji efektivitas skema tersebut.',
+      'Seluruh pemain dilaporkan dalam kondisi siap tempur dan memiliki motivasi tinggi untuk mengamankan poin penuh dalam pertandingan yang diprediksi akan berjalan ketat tersebut.',
+    ],
   },
   {
     id: '4',
@@ -41,6 +57,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Performa gemilang dari para pemain muda menunjukkan masa depan cerah akademi klub.',
     tanggal: '15 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Jakarta — Prestasi membanggakan diraih oleh akademi muda Persekat Tegal U-18 yang sukses menjuarai Turnamen Pemuda Nasional setelah menumbangkan tim-tim tangguh dari berbagai daerah di tanah air.',
+      'Pada babak final yang berlangsung ketat, skuad muda ini tampil dominan dengan permainan kolektif yang rapi. Kemenangan dengan skor akhir 2-0 mengunci gelar juara sekaligus mengukuhkan dominasi pembinaan usia muda klub.',
+      'Keberhasilan ini membuktikan efektivitas sistem pembinaan talenta lokal yang dijalankan klub, serta menjanjikan masa depan yang cerah bagi keberlanjutan skuad utama Persekat Tegal mendatang.',
+    ],
   },
   {
     id: '5',
@@ -49,6 +70,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Jersey edisi khusus resmi diluncurkan dan langsung disambut antusiasme luar biasa dari para supporter.',
     tanggal: '14 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Persekat Tegal secara resmi memperkenalkan jersi edisi ketiga untuk musim kompetisi 2026/2027. Seragam tanding ini dibalut dengan ornamen motif khas kearifan lokal Tegal yang merepresentasikan kebanggaan daerah.',
+      'Perpaduan warna elegan serta elemen desain artistik menjadikannya salah satu rilisan merchandise paling dinantikan oleh para pendukung. Peluncuran dilakukan secara langsung melalui kanal media sosial dan official store klub.',
+      'Antusiasme para suporter sangat tinggi sejak hari pertama penjualan. Jersey edisi khusus ini tidak hanya menjadi pakaian tanding, namun juga wujud apresiasi terhadap nilai budaya dan sejarah lokal.',
+    ],
   },
   {
     id: '6',
@@ -57,6 +83,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Fasilitas markas utama kini telah siap memenuhi standar tinggi kelayakan kompetisi nasional.',
     tanggal: '13 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Pengerjaan perbaikan dan pembenahan fasilitas Stadion Tri Sanja Slawi resmi dinyatakan selesai sepenuhnya. Pembenahan utama meliputi penyempurnaan kualitas drainase rumput lapangan serta peningkatan daya pencahayaan lampu penerangan malam.',
+      'Tim verifikasi dari otoritas pengelola liga telah melakukan pengecekan langsung dan menyatakan infrastruktur markas Persekat Tegal ini telah memenuhi standar kelayakan untuk menggelar laga level nasional.',
+      'Dengan rampungnya fasilitas ini, diharapkan permainan tim di kandang dapat berjalan lebih optimal serta memberikan kenyamanan terbaik bagi para suporter yang hadir di tribun.',
+    ],
   },
   {
     id: '7',
@@ -65,6 +96,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Atmosfer luar biasa dari para pendukung memberikan suntikan motivasi tambahan bagi seluruh tim.',
     tanggal: '12 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Ratusan suporter memadati area tribun Stadion Tri Sanja saat skuad Persekat Tegal menggelar sesi latihan terbuka terakhir sebelum bertolak menuju markas lawan untuk melakoni laga tandang.',
+      'Dukungan serta nyanyian pemicu semangat membahana di sepanjang sesi latihan, membakar optimisme serta mental bertanding seluruh pemain dan jajaran pelatih.',
+      'Manajemen dan tim menyampaikan rasa terima kasih mendalam atas loyalitas yang ditunjukkan pendukung, dan berjanji akan berjuang sekuat tenaga mencuri poin dari laga luar kandang tersebut.',
+    ],
   },
   {
     id: '8',
@@ -73,6 +109,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Hasil tes fisik menunjukkan stamina dan daya tahan seluruh pemain berada pada level optimal.',
     tanggal: '11 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Skuad Persekat Tegal menjalani serangkaian tes VO2 Max dan pengujian kondisi fisik komprehensif setelah kembali dari masa jeda libur kompetisi singkat.',
+      'Hasil evaluasi menunjukkan catatan angka yang sangat memuaskan, di mana tingkat daya tahan dan kebugaran pemain tetap terjaga pada angka standar tinggi yang ditetapkan oleh tim pelatih fisik.',
+      'Kedisiplinan para pemain dalam menjalankan program latihan mandiri selama masa jeda diapresiasi tinggi oleh pelatih kepala, menjadi modal berharga mengarungi jadwal kompetisi yang padat.',
+    ],
   },
   {
     id: '9',
@@ -81,6 +122,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Pemain berusia 19 tahun tersebut diproyeksikan mengisi kedalaman skuad lini tengah dalam jangka panjang.',
     tanggal: '10 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Persekat Tegal kembali memperkuat kedalaman lini tengah dengan meresmikan perekrutan gelandang muda berbakat berusia 19 tahun yang sebelumnya tampil menonjol di Liga kompetisi tingkat regional.',
+      'Pemain muda ini dinilai memiliki visi bermain yang jeli serta akurasi umpan yang mumpuni. Kehadirannya diharapkan memberikan opsi variasi taktik dan penyegaran energi di lini tengah tim.',
+      'Perekrutan ini sejalan dengan komitmen jangka panjang klub dalam mengumpulkan dan mematangkan talenta-talenta muda berprospek cerah.',
+    ],
   },
   {
     id: '10',
@@ -89,6 +135,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Sektor pertahanan tampil solid dan disiplin sepanjang 90 menit laga persahabatan sore tadi.',
     tanggal: '09 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Laga uji coba persiapan paruh musim antara Persekat Tegal menghadapi tim tamu berjalan sukses. Laskar Ki Gede Sebayu menyudahi laga dengan kemenangan meyakinkan tanpa kebobolan.',
+      'Kedisiplinan sektor lini belakang serta ketangguhan penjaga gawang menjadi kunci utama koordinasi pertahanan tim yang tidak mampu ditembus oleh barisan penyerang lawan.',
+      'Pelatih menilai laga ini sangat bermanfaat untuk menguji berbagai variasi kombinasi susunan pemain serta mengukur kesiapan fisik dalam situasi pertandingan nyata.',
+    ],
   },
   {
     id: '11',
@@ -97,6 +148,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Langkah nyata klub dalam memberikan ruang perkembangan bagi pembinaan usia muda daerah.',
     tanggal: '08 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Komitmen Persekat Tegal dalam mengorbitkan talenta lokal dibuktikan dengan dipromosikannya dua pemain muda dari tim akademi ke dalam skuad utama tim senior.',
+      'Kedua pemain yang berposisi sebagai bek sayap dan gelandang bertahan tersebut dinilai menunjukkan konsistensi performa luar biasa dan kematangan mental bertanding selama membela tim muda.',
+      'Keputusan promosi ini disambut hangat oleh publik sepak bola Tegal sebagai wujud keberhasilan pembinaan berjenjang di lingkup internal klub.',
+    ],
   },
   {
     id: '12',
@@ -105,6 +161,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Kolaborasi bisnis ini diharapkan mampu mendukung finansial dan operasional klub secara berkelanjutan.',
     tanggal: '07 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Manajemen Persekat Tegal resmi menyepakati kerja sama kemitraan strategis dengan salah satu perusahaan nasional terkemuka sebagai sponsor utama klub untuk durasi beberapa musim ke depan.',
+      'Penandatanganan kesepakatan ini mencakup dukungan operasional, finansial, serta kolaborasi program promosi bersama yang saling menguntungkan kedua belah pihak.',
+      'Dukungan komersial ini memberikan stabilitas finansial penting bagi klub untuk terus berkembang secara profesional dan mencapai target-target kompetisi yang dipasang.',
+    ],
   },
   {
     id: '13',
@@ -113,6 +174,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Supporter kini dapat membeli tiket pertandingan secara praktis melalui platform resmi klub.',
     tanggal: '06 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Untuk meningkatkan pelayanan dan kemudahan akses bagi para pendukung, Persekat Tegal resmi membuka sistem penjualan tiket berbasis digital untuk laga kandang mendatang.',
+      'Pembelian tiket dapat dilakukan dengan mudah melalui situs resmi klub dan aplikasi mitra tanpa perlu mengantre secara konvensional di lokasi stadion.',
+      'Langkah modernisasi ini diharapkan mampu menciptakan tata kelola pertandingan yang lebih teratur, aman, dan nyaman bagi seluruh penonton yang hadir.',
+    ],
   },
   {
     id: '14',
@@ -121,6 +187,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Ulasan mendalam mengenai skema permainan yang menjadi pembeda pada laga krusial pekan lalu.',
     tanggal: '05 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Kemenangan penting pada pekan lalu menjadi sorotan banyak pengamat sepak bola lokal berkat skema taktik yang berjalan sangat disiplin dan efektif sepanjang laga.',
+      'Gaya permainan press tinggi dan keberhasilan menutup alur distribusi bola lawan membuat lawan kesulitan mengembangkan pola serangan sejak dari area pertahanan sendiri.',
+      'Transisi cepat dari situasi memotong bola hingga menjadi ancaman langsung di depan gawang lawan membuktikan kematangan koordinasi antarlini Persekat Tegal musim ini.',
+    ],
   },
   {
     id: '15',
@@ -129,6 +200,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Pemain dan jajaran staf berbagi keceriaan dalam agenda kepedulian sosial di wilayah Tegal.',
     tanggal: '04 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Tegal — Di tengah kesibukan jadwal latihan yang padat, jajaran pemain, staf pelatih, dan manajemen Persekat Tegal meluangkan waktu menggelar agenda bakti sosial bersama masyarakat lokal.',
+      'Kegiatan yang diisi dengan penyerahan bantuan, sesi berbagi, serta interaksi ramah tamah ini berlangsung dengan hangat dan penuh suasana kebersamaan.',
+      'Agenda kepedulian sosial ini merupakan komitmen nyata klub untuk selalu dekat dan memberikan kontribusi positif bagi masyarakat Tegal di luar lapangan.',
+    ],
   },
   {
     id: '16',
@@ -137,6 +213,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Proses rehabilitasi pasca cedera berjalan sesuai jadwal dan diperkirakan segera bergabung dalam latihan.',
     tanggal: '03 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Berita menggembirakan datang dari tim medis Persekat Tegal terkait proses pemulihan cedera yang dialami oleh penjaga gawang utama klub.',
+      'Pasca menjalani sesi rehabilitasi intensif selama beberapa pekan, hasil pemeriksaan fisioterapi terakhir menyatakan bahwa kondisi otot dan kebugarannya telah pulih secara signifikan.',
+      'Sang kiper dijadwalkan mulai bergabung secara bertahap dalam sesi latihan ringan tim mulai pekan depan sebelum dinyatakan siap kembali bertanding.',
+    ],
   },
   {
     id: '17',
@@ -145,6 +226,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Koreografi dan dukungan konsisten siap digelorakan dari tribun tim tamu akhir pekan nanti.',
     tanggal: '02 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Rombongan bus membawa ribuan suporter setia Persekat Tegal resmi diberangkatkan secara bersama-sama dari titik kumpul markas klub untuk mengawal laga luar kandang.',
+      'Para pendukung siap membentangkan koreografi khusus serta menyuarakan yel-yel penyemangat demi memberikan atmosfer dukungan serasa bertanding di kandang sendiri.',
+      'Pemberangkatan dikawal secara tertib dan mengedepankan aspek keselamatan serta sportivitas antar penikmat sepak bola sepanjang perjalanan.',
+    ],
   },
   {
     id: '18',
@@ -153,6 +239,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Memudahkan para pendukung untuk mendapatkan pernak-pernik dan akumulasi produk resmi klub.',
     tanggal: '01 Sep 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Tegal — Dalam rangka mendekatkan akses bagi para penggemar, Persekat Tegal meresmikan pembukaan cabang baru Official Merchandise Store di kawasan strategis pusat Kota Tegal.',
+      'Toko cabang baru ini menyediakan koleksi lengkap perlengkapan resmi klub, mulai dari jersey tanding, pakaian santai, syal, hingga berbagai pernak-pernik eksklusif.',
+      'Acara peresmian dimeriahkan dengan sesi jumpa fans bersama beberapa pemain utama yang disambut antusias oleh ratusan pembeli yang hadir.',
+    ],
   },
   {
     id: '19',
@@ -161,6 +252,11 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Pencapaian rekor tak terkalahkan sepanjang bulan membawa apresiasi dari otoritas penyelenggara liga.',
     tanggal: '31 Ags 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Pelatih kepala Persekat Tegal dianugerahi penghargaan sebagai Pelatih Terbaik Bulanan berkat performa impresif tim sepanjang bulan lalu.',
+      'Di bawah kepemimpinannya, Laskar Ki Gede Sebayu berhasil menyapu bersih laga dengan catatan tak terkalahkan serta rasio kebobolan paling minim di kompetisi.',
+      'Pelatih mempersembahkan penghargaan ini kepada seluruh jajaran staf, pemain, dan suporter yang selalu memberikan dedikasi serta dukungan penuh.',
+    ],
   },
   {
     id: '20',
@@ -169,5 +265,10 @@ export const BERITA_KLUB: Berita[] = [
     ringkasan: 'Sesi pembekalan psikologi diberikan untuk menjaga konsistensi dan determinasi meraih target kompetisi.',
     tanggal: '30 Ags 2026',
     gambarUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=600&auto=format&fit=crop',
+    konten: [
+      'Slawi — Menyongsong persaingan sengit pada paruh kedua kompetisi, manajemen dan tim pelatih Persekat Tegal mengadakan sesi pembekalan motivasi serta penguatan mental bertanding.',
+      'Fokus utama diberikan pada aspek konsistensi permainan, pengelolaan tekanan di laga-laga krusial, serta menjaga kekompakan antar elemen dalam skuad.',
+      'Pendekatan ini diharapkan membuat seluruh tim tetap berada dalam kondisi mental siap bertarung dan fokus menjaga performa terbaik hingga akhir musim.',
+    ],
   },
 ];
