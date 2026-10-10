@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #800000;
+  --color-black: #0a0a0a;
+  --color-white: #ffffff;
+}
+
+/* --- RESET OVERFLOW & SCROLLBAR --- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}

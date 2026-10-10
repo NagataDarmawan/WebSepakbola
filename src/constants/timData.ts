@@ -1,0 +1,395 @@
+export interface PemainItem {
+  id: string;
+  nama: string;
+  posisi: string;
+  nomorPunggung: number;
+  fotoUrl: string;
+  kewarganegaraan?: string;
+}
+
+export interface OfficialItem {
+  id: string;
+  nama: string;
+  jabatan: string;
+  fotoUrl: string;
+}
+
+export const TIM_DATA: PemainItem[] = [
+  {
+    id: 'p1',
+    nama: 'ALDI CLAUDIO',
+    posisi: 'PENJAGA GAWANG',
+    nomorPunggung: 1,
+    fotoUrl: '',
+  },
+  {
+    id: 'p2',
+    nama: 'LIBRA ARDIANSYAH',
+    posisi: 'BEK TENGAH',
+    nomorPunggung: 4,
+    fotoUrl: '',
+  },
+  {
+    id: 'p3',
+    nama: 'KAFIN MARAMIS',
+    posisi: 'BEK SAYAP',
+    nomorPunggung: 12,
+    fotoUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p4',
+    nama: 'FIRMAN FERDIANSYAH',
+    posisi: 'GELANDANG BERTAHAN',
+    nomorPunggung: 6,
+    fotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p5',
+    nama: 'LUTHFI KAMAL',
+    posisi: 'GELANDANG SERANG',
+    nomorPunggung: 8,
+    fotoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p6',
+    nama: 'AULIA RAHMAN',
+    posisi: 'GELANDANG',
+    nomorPunggung: 10,
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p7',
+    nama: 'RIVALDO LESTALUHU',
+    posisi: 'PENYERANG SAYAP',
+    nomorPunggung: 11,
+    fotoUrl: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p8',
+    nama: 'RANGGA MUSLIM',
+    posisi: 'PENYERANG SAYAP',
+    nomorPunggung: 15,
+    fotoUrl: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p9',
+    nama: 'NAGATA DARMAWAN',
+    posisi: 'PENYERANG TENGAH',
+    nomorPunggung: 9,
+    fotoUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p10',
+    nama: 'SYAHRUL MUSTOFA',
+    posisi: 'BEK KIRI',
+    nomorPunggung: 17,
+    fotoUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p11',
+    nama: 'BAGUS NIRWANTO',
+    posisi: 'BEK KANAN',
+    nomorPunggung: 5,
+    fotoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p12',
+    nama: 'DIMAS FANI',
+    posisi: 'PENJAGA GAWANG',
+    nomorPunggung: 20,
+    fotoUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p13',
+    nama: 'BAYU PRATAMA',
+    posisi: 'PENJAGA GAWANG',
+    nomorPunggung: 30,
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p14',
+    nama: 'EKO SETIAWAN',
+    posisi: 'PENJAGA GAWANG',
+    nomorPunggung: 99,
+    fotoUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p15',
+    nama: 'ADHE OWEN',
+    posisi: 'BEK TENGAH',
+    nomorPunggung: 2,
+    fotoUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p16',
+    nama: 'M. RIFQI',
+    posisi: 'BEK TENGAH',
+    nomorPunggung: 3,
+    fotoUrl: 'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p17',
+    nama: 'WAHYU SUSETYO',
+    posisi: 'BEK TENGAH',
+    nomorPunggung: 13,
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p18',
+    nama: 'FITCHO TEHUPEIORY',
+    posisi: 'BEK KANAN',
+    nomorPunggung: 14,
+    fotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p19',
+    nama: 'DEDI TRI MAULANA',
+    posisi: 'BEK KIRI',
+    nomorPunggung: 16,
+    fotoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p20',
+    nama: 'ARIS WAHYU',
+    posisi: 'BEK TENGAH',
+    nomorPunggung: 19,
+    fotoUrl: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p21',
+    nama: 'AHMAD NORDEN',
+    posisi: 'GELANDANG BERTAHAN',
+    nomorPunggung: 21,
+    fotoUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p22',
+    nama: 'KHAERUL ANAM',
+    posisi: 'GELANDANG TENGAH',
+    nomorPunggung: 22,
+    fotoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p23',
+    nama: 'FANDI EKO UTOMO',
+    posisi: 'GELANDANG SERANG',
+    nomorPunggung: 23,
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p24',
+    nama: 'AGUNG SUPRIYANTO',
+    posisi: 'GELANDANG TENGAH',
+    nomorPunggung: 24,
+    fotoUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p25',
+    nama: 'RESTU GUNAWAN',
+    posisi: 'GELANDANG SERANG',
+    nomorPunggung: 25,
+    fotoUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p26',
+    nama: 'M. WAHYU',
+    posisi: 'GELANDANG BERTAHAN',
+    nomorPunggung: 26,
+    fotoUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p27',
+    nama: 'ARBETA ROKY',
+    posisi: 'PENYERANG TENGAH',
+    nomorPunggung: 27,
+    fotoUrl: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p28',
+    nama: 'WAKIT TRIONO',
+    posisi: 'PENYERANG SAYAP',
+    nomorPunggung: 28,
+    fotoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p29',
+    nama: 'SAMSUL ARIF',
+    posisi: 'PENYERANG TENGAH',
+    nomorPunggung: 29,
+    fotoUrl: 'https://images.unsplash.com/photo-1543351611-704c103b6500?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p30',
+    nama: 'IRVAN YUNUS',
+    posisi: 'PENYERANG SAYAP',
+    nomorPunggung: 31,
+    fotoUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p31',
+    nama: 'GUGUN RIZKY',
+    posisi: 'PENYERANG SAYAP',
+    nomorPunggung: 32,
+    fotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'p32',
+    nama: 'NANDA PRATAMA',
+    posisi: 'PENYERANG TENGAH',
+    nomorPunggung: 33,
+    fotoUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop',
+  },
+];
+
+export const OFFICIAL_DATA: OfficialItem[] = [
+  {
+    id: 'o1',
+    nama: 'MIAL BALEBATA ARMAND',
+    jabatan: 'PELATIH KEPALA',
+    fotoUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o2',
+    nama: 'EKO PURJIANTO',
+    jabatan: 'ASISTEN PELATIH',
+    fotoUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o3',
+    nama: 'HERI SUSANTO',
+    jabatan: 'PELATIH KIPER',
+    fotoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o4',
+    nama: 'BUDI KURNIAWAN',
+    jabatan: 'PELATIH FISIK',
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o5',
+    nama: 'DR. HENDRA WIJAYA',
+    jabatan: 'DOKTER TIM',
+    fotoUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o6',
+    nama: 'ANDI PRASETYO',
+    jabatan: 'FISIOTERAPIS',
+    fotoUrl: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o7',
+    nama: 'RUDI HERMANTO',
+    jabatan: 'KITMAN',
+    fotoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o8',
+    nama: 'ANTON SUTRISNO',
+    jabatan: 'KITMAN',
+    fotoUrl: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o9',
+    nama: 'BAMBANG NUGROHO',
+    jabatan: 'MANAJER TIM',
+    fotoUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o10',
+    nama: 'CANDRA GUNAWAN',
+    jabatan: 'SEKRETARIS TIM',
+    fotoUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o11',
+    nama: 'DANI KURNIA',
+    jabatan: 'ANALIS PERTANDINGAN',
+    fotoUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o12',
+    nama: 'ERWIN SANTOSO',
+    jabatan: 'ASISTEN PELATIH FISIK',
+    fotoUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o13',
+    nama: 'FERDIANSYAH',
+    jabatan: 'MASSEUR',
+    fotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o14',
+    nama: 'GITA PRATAMA',
+    jabatan: 'MASSEUR',
+    fotoUrl: 'https://images.unsplash.com/photo-1543351611-704c103b6500?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o15',
+    nama: 'HADI WIJAYA',
+    jabatan: 'MEDIA OFFICER',
+    fotoUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o16',
+    nama: 'IWAN SETIAWAN',
+    jabatan: 'FOTOGRAFER TIM',
+    fotoUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o17',
+    nama: 'JOKO SUSILO',
+    jabatan: 'KOORDINATOR LAPANGAN',
+    fotoUrl: 'https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o18',
+    nama: 'KURNIAWAN BUKHORI',
+    jabatan: 'TIM LOGISTIK',
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o19',
+    nama: 'LUKMAN HAKIM',
+    jabatan: 'TIM LOGISTIK',
+    fotoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o20',
+    nama: 'M. MAHFUD',
+    jabatan: 'OPERASIONAL BUS TIM',
+    fotoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o21',
+    nama: 'NUR HIDAYAT',
+    jabatan: 'KEPALA SCUOTING',
+    fotoUrl: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o22',
+    nama: 'OKTA PRABOWO',
+    jabatan: 'ASISTEN ANALIS',
+    fotoUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o23',
+    nama: 'PURWANTO',
+    jabatan: 'TIM NUTRISI',
+    fotoUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o24',
+    nama: 'QODRI RAMADHAN',
+    jabatan: 'ASISTEN DOKTER',
+    fotoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'o25',
+    nama: 'RIZKY SEBASTIAN',
+    jabatan: 'ADMINISTRASI UTAMA',
+    fotoUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop',
+  },
+];
