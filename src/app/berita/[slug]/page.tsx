@@ -1,12 +1,11 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Calendar, User, ArrowRight, PlayCircle } from 'lucide-react';
+import { ArrowLeft, Calendar, User, ArrowRight, PlayCircle } from 'lucide-react';
 import Navbar from '@/components/layouts/Navbar';
 import Footer from '@/components/layouts/Footer';
 import ImageWithFallback from '@/components/ui/ImageWithFallback';
 import { BERITA_KLUB } from '@/constants/beritaData';
 import { VIDEO_KLUB } from '@/constants/videoData';
-import BackLink from './BackLink'; // Impor BackLink sebaris tanpa folder baru
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -38,8 +37,14 @@ export default async function DetailBeritaPage({ params }: PageProps) {
       <main className="flex-grow pt-28 sm:pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
-          {/* Teks Kembali dengan Panah Kiri (Langsung Kembali ke Halaman Sebelumnya) */}
-          <BackLink />
+          {/* Teks Kembali ke Halaman Daftar Berita */}
+          <Link
+            href="/media/berita"
+            className="group inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-neutral-600 hover:text-red-600 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            <span>Kembali ke Berita</span>
+          </Link>
 
           {/* Grid Layout Utama */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -86,10 +91,16 @@ export default async function DetailBeritaPage({ params }: PageProps) {
             {/* Sidebar Berita Lainnya */}
             <aside className="lg:col-span-4 space-y-6 lg:sticky lg:top-28 pt-6 lg:pt-0 border-t lg:border-t-0 border-neutral-200">
               <div className="flex items-center justify-between pb-2 border-b border-neutral-200">
-                <h2 className="text-lg font-black uppercase tracking-tight text-neutral-900">
+                <Link
+                  href="/media/berita"
+                  className="text-lg font-black uppercase tracking-tight text-neutral-900 hover:text-red-600 transition-colors"
+                >
                   BERITA LAINNYA
-                </h2>
-                <Link href="/berita" className="text-xs font-bold text-red-600 hover:text-red-700 flex items-center gap-1">
+                </Link>
+                <Link
+                  href="/media/berita"
+                  className="text-xs font-bold text-red-600 hover:text-red-700 flex items-center gap-1"
+                >
                   <span>SEMUA</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
