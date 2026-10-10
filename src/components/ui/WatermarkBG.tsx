@@ -1,26 +1,27 @@
 'use client';
 
 export default function TypographyWatermark() {
-  // Ukuran font diperbesar ke 64px dengan lebar kanvas 1650px & tinggi 230px agar teks ekstra besar, tebal, dan tanpa potongan
-  const svgPattern = encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" width="1650" height="230" viewBox="0 0 1650 230">
-      <style>
-        .text { font-family: system-ui, -apple-system, sans-serif; font-weight: 900; font-size: 100px; fill: black; text-transform: uppercase; letter-spacing: -1px; }
-      </style>
-      <text x="0" y="70" dominant-baseline="central" class="text">PERSEKAT TEGAL LASKAR KI GEDE SEBAYU </text>
-      <text x="-350" y="170" dominant-baseline="central" class="text">LASKAR KI GEDE SEBAYU PERSEKAT TEGAL PERSEKAT TEGAL </text>
-    </svg>
-  `);
+  const baseTexts = ['PERSEKAT TEGAL', 'LASKAR KI GEDE SEBAYU'];
+
+  // 120 baris untuk menjamin coverage penuh dari atas sampai bawah
+  const lines = Array.from({ length: 120 }, (_, index) => baseTexts[index % baseTexts.length]);
 
   return (
-    <div className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0 opacity-15">
-      <div 
-        className="w-[300%] h-[300%] -translate-x-1/3 -translate-y-1/3 -rotate-6"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,${svgPattern}")`,
-          backgroundRepeat: 'repeat',
-        }}
-      />
+    <div className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400%] h-[400%] flex flex-col justify-center gap-4 opacity-25 -rotate-6 origin-center">
+        {lines.map((text, index) => (
+          <div
+            key={index}
+            className={`whitespace-nowrap flex items-center gap-6 ${
+              index % 2 === 0 ? '-translate-x-16 sm:-translate-x-24' : 'translate-x-16 sm:translate-x-24'
+            }`}
+          >
+            <span className="text-[80px] font-black uppercase tracking-tighter text-black leading-none shrink-0">
+              {text} • {text} • {text} • {text} • {text} • {text}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
